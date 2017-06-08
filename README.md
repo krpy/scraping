@@ -136,11 +136,3 @@ with requests.Session(config={'verbose': sys.stderr}) as c:
     print('sopier') in r.content
 
 #TypeError: __init__() got an unexpected keyword argument 'config'
-#---------------------------------------------------------------------------
-#TypeError                                 Traceback (most recent call last)
-#<ipython-input-66-28072e0c4828> in <module>()
-#----> 1 with requests.Session(config={'verbose': sys.stderr}) as c:
-#      2     c.post('https://powerfultrader.eu/wp-login.php?redirect_to=https%3A%2F%2Fpowerfultrader.eu%2F%3Fp%3D5200', data=payload)
-#      3     r = c.get('https://powerfultrader.eu/?p=5200')
-#      4     print('sopier') in r.content
-#TypeError: __init__() got an unexpected keyword argument 'config'
